@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --white-shadow: rgba(255, 255, 255, 0.6);
+  --desktop-background: #E6E9FB;
+  --black-font: #111827;
+  --black-text: #374151;
+  --gray-input: #B3B8D8;
+  --white-input: #FAFAFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--desktop-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: regular;
+}
+
+main {
+  width: 1094px;
+  height: 432px;
+  border-radius: 16px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 0 var(--white-shadow);
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--black-font);
+  margin-top: 74px;
+  margin-bottom: 12px;
+  margin-right: 34px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 24px;
+  margin-inline: 111px;
+  text-align: center;
+  color: var(--black-text);
+}
+
+.input-text {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.input-text input{
+  width: 599px;
+  height: 72px;
+  outline: 1px solid var(--gray-input);
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background-color: var(--white-input);
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.input-text input:hover{
+  outline-width: 2px;
+}
+
+.input-text button {
+  width: 185px;
+  height: 72px;
+  background-color: var(--black-font);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: medium;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.input-text button:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.checkbox-container {
+  width: 814px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.checked {
+  background-image: url('./assets/check1.png');
+  background-size: cover;
+}
+
+.invalid {
+  outline-color: #ff562e96 !important;
+}
+
+.valid {
+  outline-color: #00d68f96 !important;
+}
+
+.checkbox {
+  outline: 1px solid var(--black-font);
+  margin-top: 4px;
+  margin-left: 4px;
+  border-radius: 6px;
+  width: 28px;
+  height: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  outline: 2px solid var(--black-text);
+}
+
+.checkbox-container span {
+  font-weight: regular;
+  font-size: 14px;
+  color: var(--black-font);
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+  width: 80%;
+}
+dialog button {
+  width: 100%;
+  padding: 5px 30px;
+  margin: 20px 0;
+}
+dialog .enterthemail {
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+@media (max-width: 1150px) {
+  body {
+    background-color: var(--white);
+  }
+}
+
+@media (max-width: 900px) {
+  .input-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkbox-container {
+    max-width: 600px;
+  }
+  .checkbox {
+    width: 38px;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    min-width: 680px;
+  }
+}
