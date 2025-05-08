@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile card component</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+  <main>
+    <article class="card">
+      <div class="profile-image">
+        <div class="profile-image-container">
+          <img src="./assets/avatar.svg" alt="Profile image">
+        </div>
+      </div>
+      <section class="profile-data">
+        <h1>John Deo</h1>
+        <h2>Frontend Developer</h2>
+        <p>Passionate frontend developer with expertise in HTML, CSS, JavaScript, and React.</p>
+        <ul class="social-data">
+          <li class="followers-data">
+            <span>1999</span>
+            <span>Followers</span>
+          </li>
+          <li class="separator"></li>
+          <li class="following-data">
+            <span>190</span>
+            <span>Following</span>
+          </li>
+          <li class="separator"></li>
+          <li class="projects-data">
+            <span>15</span>
+            <span>Projects</span>
+          </li>
+        </ul>
+        <nav class="card-buttons">
+          <button class="follow-button">Follow</button>
+          <button class="profile-button">View Profile</button>
+        </nav>
+      </section>
+    </article>
+  </main>
+  <script src="./src/index.js"></script>
+</body>
+</html>
