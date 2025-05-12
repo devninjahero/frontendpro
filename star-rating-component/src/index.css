@@ -1,0 +1,25 @@
+:root {
+  --page-background-color: #e6e9fb;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--page-background-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (max-width: 840px) {
+  body {
+    background-color: var(--white);
+  }
+}

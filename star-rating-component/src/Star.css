@@ -1,0 +1,30 @@
+:root {
+  --star-gray: #e2e8f0;
+  --star-gold: #facc15;
+  --star-yellow: #fce68f;
+}
+
+.star {
+  width: 84px;
+  height: 84px;
+  fill: var(--star-gray);
+  cursor: pointer;
+  padding-inline: 16px;
+}
+
+.star.selected {
+  fill: var(--star-gold);
+}
+
+.star.hovered {
+  fill: var(--star-yellow);
+  transition: fill 0.2s;
+}
+
+@media (max-width: 840px) {
+  .star {
+    width: calc((100vw - 50px) / 7);
+    height: max-content;
+    padding-inline: 5px;
+  }
+}
