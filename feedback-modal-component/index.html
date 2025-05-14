@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Feedback Modal Component</title>
+  </head>
+  <body>
+    <main>
+      <section class="main-content">
+        <button class="accept-button" id="feedback-button">Give Feedback</button>
+        <span class="feedback-text"></span>
+      </section>
+    </main>
+    <dialog class="dialog">
+      <div class="dialog-content">
+        <div class="close-button-container">
+          <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="c">
+                <rect width="34" height="34" fill="#1A1832" />
+              </clipPath>
+            </defs>
+            <g
+              clip-path="url(#c)"
+              stroke="#DADADA"
+              stroke-width="2.125"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M25.5 8.5L8.5 25.5" />
+              <path d="M9 9L26 26" />
+            </g>
+          </svg>
+        </div>
+        <div class="h1container">
+          <h1>How likely are you to recommend FrontendPro to someone you know?</h1>
+        </div>
+        <div class="rate-buttons">
+          <button class="rate-button button1">1</button>
+          <button class="rate-button button2">2</button>
+          <button class="rate-button button3">3</button>
+          <button class="rate-button button4">4</button>
+          <button class="rate-button button5">5</button>
+          <button class="rate-button button6">6</button>
+          <button class="rate-button button7">7</button>
+          <button class="rate-button button8">8</button>
+          <button class="rate-button button9">9</button>
+          <button class="rate-button button10">10</button>
+        </div>
+        <div class="rate-labels">
+          <span>Not likely at all</span>
+          <span>Extremely Likely</span>
+        </div>
+        <div class="main-buttons">
+          <button class="cancel-button">Cancel</button>
+          <button class="submit-button accept-button">Submit</button>
+        </div>
+      </div>
+    </dialog>
+    <script src="/src/script.js"></script>
+  </body>
+</html>
